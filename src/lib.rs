@@ -78,7 +78,7 @@
 )]
 #![cfg_attr(feature = "internal_benches", allow(unstable_features))]
 #![cfg_attr(feature = "internal_benches", feature(test))]
-#![cfg_attr(feature = "force_std_detection", feature(stdsimd))]
+#![feature(stdsimd)]
 
 #[macro_use]
 mod debug;
