@@ -53,7 +53,6 @@
 #![deny(
     missing_docs,
     trivial_numeric_casts,
-    unstable_features, // Used by `internal_benches`
     unused_qualifications,
     variant_size_differences,
 )]
@@ -63,7 +62,6 @@
     unused_extern_crates,
     unused_import_braces,
     unused_results,
-    warnings
 )]
 #![cfg_attr(
     any(
@@ -80,6 +78,7 @@
 )]
 #![cfg_attr(feature = "internal_benches", allow(unstable_features))]
 #![cfg_attr(feature = "internal_benches", feature(test))]
+#![cfg_attr(feature = "force_std_detection", feature(stdsimd))]
 
 #[macro_use]
 mod debug;
