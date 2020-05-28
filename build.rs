@@ -165,6 +165,7 @@ fn c_flags(target: &Target) -> &'static [&'static str] {
             "-Wbad-function-cast",
             "-Wnested-externs",
             "-Wstrict-prototypes",
+            "-gz=none",
         ];
         NON_MSVC_FLAGS
     } else {
@@ -198,6 +199,7 @@ fn cpp_flags(target: &Target) -> &'static [&'static str] {
             "-Wwrite-strings",
             "-fno-strict-aliasing",
             "-fvisibility=hidden",
+            "-gz=none",
         ];
         NON_MSVC_FLAGS
     } else {
